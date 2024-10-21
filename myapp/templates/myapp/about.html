@@ -1,0 +1,33 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %} About{% endblock title %}
+</head>
+    {% block content %}
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1>About</h1>
+                <p>
+                    Hello! I’m a web developer with a passion for creating dynamic and user-friendly websites. Born on January 1,
+                    1998, I passed SLC in 2015 from Shree Siddha Devi Secondary School and pursued Management at Phidim Higher
+                    Secondary School, completing classes 11 and 12 in 2018.
+                </p>
+                <p>
+                    I have a strong foundation in <b>HTML</b>, <b>CSS</b>, and <b>Python</b>, and I specialize in building robust web
+                    applications using the <b>Django framework</b>. Currently, I live in South Korea for work, and during my leisure
+                    time, I focus on improving my skills and staying up-to-date with the latest trends in web development.
+                </p>
+                <p>
+                    Whether it’s front-end design or back-end development, I am committed to delivering efficient and maintainable
+                    solutions. Feel free to explore my work or get in touch if you’d like to collaborate!
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

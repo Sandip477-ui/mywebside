@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background for softness */
+    color: #0d0d0a; /* Main text color */
+}
+
+h1{
+    color: #eba818; /* Primary color for headings */
+}
+h5 {
+    color: #0d0d0a;
+}
+.container {
+    max-width: 1300px; /* Maximum width for the main container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* About Section Flexbox */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* Image Styles */
+#about img {
+    height: 340px; /* Set the height of the image to 500px */
+    width: 350px;
+    object-fit: cover;
+    margin-right: 0; /* Space between image and text */
+    margin-bottom: 15px; /* Space below the image */
+    border-radius: 10px; /* Rounded corners for image */
+    margin-left: 10px;
+}
+
+/* Text Section */
+#about .text-section {
+    flex: 1px;
+    max-width: 100%; 
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-bottom: 200px;
+}
+
+#about h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ #about p { 
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-right: 10px; 
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column; /* Stack image and text on mobile */
+        align-items: center;
+        text-align: center;
+    }
+
+    #about img {
+        max-width: 100%; /* Full width for the image on mobile */
+        margin-right: 6px;
+        margin-bottom: 0; /* Space below the image on mobile */
+    }
+
+    #about .text-section {
+        max-width: 100%; /* Full width for text on mobile */
+        margin-bottom: 1px; /* Space below the text on mobile */
+        text-align: center;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(8, 53, 104); /* Dark background for footer */
+    color: white; /* White text for footer */
+    text-align: center;
+    padding: 0.9rem 0; /* Padding for footer */
+}
+
+.social {
+    margin-top: 0.5rem; /* Margin for social links */
+}
+
+.social a {
+    color: white; /* White links for social icons */
+    margin: 0 10px; /* Spacing between social icons */
+    font-size: 1.5rem; /* Size of social icons */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social a:hover {
+    color: #11d378; /* Change color on hover */
+}
